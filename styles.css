@@ -1,0 +1,200 @@
+/* Reset y base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f1ee;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+.header {
+    background: linear-gradient(135deg, #6f4e37, #8b5e3c);
+    color: #ffffff;
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+}
+
+.descripcion {
+    margin: 1rem auto 2rem;
+    max-width: 600px;
+    font-size: 1.1rem;
+}
+
+.mision-vision {
+    margin-top: 2rem;
+}
+
+.mision-vision h2 {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.mision-vision p {
+    max-width: 700px;
+    margin: 0.5rem auto 0;
+}
+
+/* ================= TITULOS ================= */
+.titulo-seccion {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    color: #6f4e37;
+    position: relative;
+}
+
+.titulo-seccion::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #6f4e37;
+    margin: 0.5rem auto 0;
+    border-radius: 5px;
+}
+
+/* ================= ACTIVIDADES ================= */
+.proyectos {
+    padding: 3rem 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    gap: 2rem;
+}
+
+.proyecto {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+.proyecto img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.proyecto h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.3rem;
+    color: #6f4e37;
+}
+
+.proyecto p {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+}
+
+/* ================= CONTACTO ================= */
+.contacto {
+    background-color: #e7e3df;
+    padding: 3rem 1.5rem;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.campo {
+    margin-bottom: 1.3rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6f4e37;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, #6f4e37, #8b5e3c);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #2f2f2f;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.footer nav {
+    margin: 1rem 0;
+}
+
+.footer a {
+    color: #ffffff;
+    margin: 0 0.6rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (min-width: 768px) {
+    .contenedor-proyectos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header h1 {
+        font-size: 3.2rem;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <h1>Café Aroma</h1>
+        <p class="descripcion">
+            Cafetería ficticia dedicada al café artesanal y postres caseros.
+        </p>
+
+        <section class="mision-vision">
+            <h2>Misión</h2>
+            <p>
+                Ofrecer café de calidad en un ambiente cálido y accesible para todos nuestros clientes.
+            </p>
+
+            <h2>Visión</h2>
+            <p>
+                Ser una cafetería reconocida por su sabor, atención y experiencia.
+            </p>
+        </section>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Actividades -->
+        <section class="proyectos">
+            <h2 class="titulo-seccion">Nuestras Actividades</h2>
+
+            <div class="contenedor-proyectos">
+
+                <article class="proyecto">
+                    <img src="images/cafe.jpg" alt="Taza de café artesanal">
+                    <h3>Café Artesanal</h3>
+                    <p>
+                        Preparación de café con granos seleccionados y métodos tradicionales.
+                    </p>
+                </article>
+
+                <article class="proyecto">
+                    <img src="images/postre.jpg" alt="Postres caseros">
+                    <h3>Postres Caseros</h3>
+                    <p>
+                        Elaboración diaria de postres frescos para acompañar nuestras bebidas.
+                    </p>
+                </article>
+
+                <article class="proyecto">
+                    <img src="images/zonaestudio.jpg" alt="Espacio para estudio en cafetería">
+                    <h3>Espacio para Estudio</h3>
+                    <p>
+                        Área con Wi-Fi para estudiar o trabajar en un ambiente cómodo.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contacto">
+            <h2 class="titulo-seccion">Contacto</h2>
+
+            <form>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>Síguenos en redes sociales</p>
+
+        <nav>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">X</a>
+        </nav>
+
+        <p class="copyright">
+            © 2026 Café Aroma. Proyecto académico.
+        </p>
+    </footer>
+
+</body>
+</html>
