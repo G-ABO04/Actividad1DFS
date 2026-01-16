@@ -3,128 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página empresarial de diseño de interiores y gastronomía">
-    <title>Espacios & Sabores | Diseño Profesional</title>
+    <meta name="description" content="Café Aroma - Café de especialidad, postres gourmet y espacios para trabajar y disfrutar">
+    <title>Café Aroma | Tu lugar para disfrutar del mejor café</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏢</text></svg>">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
 </head>
 <body>
     <!-- Navegación -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Espacios<span>&</span>Sabores</a>
-            <button class="menu-toggle" aria-label="Abrir menú de navegación">
+            <a href="#inicio" class="logo">
+                <i class="fas fa-coffee"></i>
+                <span>Café</span>Aroma
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-menu">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#proyectos">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Encabezado/Hero -->
+    <!-- Encabezado -->
     <header id="inicio" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Diseño de Espacios & Experiencias Gastronómicas</h1>
-                <p class="hero-subtitle">Creamos ambientes únicos que combinan funcionalidad, estética y experiencias sensoriales memorables.</p>
-                <a href="#proyectos" class="btn btn-primary">Ver Nuestros Proyectos</a>
+                <h1 class="hero-title">Café <span>Aroma</span></h1>
+                <p class="hero-subtitle">Donde cada taza cuenta una historia y cada aroma despierta una pasión</p>
+                <p class="hero-description">Somos una cafetería de especialidad que combina el arte del café con postres gourmet y espacios diseñados para el disfrute y la productividad.</p>
+                <a href="#contacto" class="btn btn-primary">Visítanos hoy</a>
             </div>
             <div class="hero-image">
-                <img src="zonaestudio.jpg" alt="Zona de estudio profesional con medidas precisas de diseño de interiores">
+                <img src="images/cafe.jpg" alt="Café con leche artístico con diseño de hoja en la espuma, servido en taza blanca con granos de café alrededor">
             </div>
         </div>
     </header>
 
-    <!-- Sección Misión y Visión -->
+    <!-- Sección Nosotros -->
     <section id="nosotros" class="about">
         <div class="container">
-            <h2 class="section-title">Nuestra Filosofía</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="about-icon">
-                        <i class="fas fa-bullseye"></i>
+            <h2 class="section-title">Sobre Café Aroma</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h3><i class="fas fa-bullseye"></i> Nuestra Misión</h3>
+                            <p>Ofrecer experiencias cafeteras excepcionales a través de café de la más alta calidad, postres artesanales y ambientes acogedores que conecten a las personas.</p>
+                        </div>
+                        <div class="vision">
+                            <h3><i class="fas fa-eye"></i> Nuestra Visión</h3>
+                            <p>Ser el referente en café de especialidad en nuestra comunidad, reconocidos por nuestra calidad, innovación y compromiso con la experiencia del cliente.</p>
+                        </div>
                     </div>
-                    <h3>Misión</h3>
-                    <p>Diseñar espacios funcionales y estéticos que mejoren la calidad de vida y el rendimiento laboral, combinados con experiencias gastronómicas que deleiten los sentidos.</p>
+                    <div class="values">
+                        <h3><i class="fas fa-heart"></i> Nuestros Valores</h3>
+                        <ul>
+                            <li><strong>Calidad:</strong> Usamos solo los mejores granos de café y ingredientes frescos.</li>
+                            <li><strong>Pasión:</strong> Amamos lo que hacemos y eso se refleja en cada producto.</li>
+                            <li><strong>Innovación:</strong> Siempre buscamos nuevas formas de sorprender a nuestros clientes.</li>
+                            <li><strong>Sostenibilidad:</strong> Trabajamos con proveedores locales y prácticas ecoamigables.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="about-card">
-                    <div class="about-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Visión</h3>
-                    <p>Ser la empresa líder en diseño integral de espacios y experiencias, reconocida por nuestra innovación, atención al detalle y compromiso con la excelencia.</p>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Valores</h3>
-                    <p>Innovación, precisión, sostenibilidad, creatividad y pasión por los detalles que hacen la diferencia en cada proyecto que emprendemos.</p>
+                <div class="about-image">
+                    <img src="images/zonaestudio.jpg" alt="Zona de estudio y trabajo en Café Aroma con medidas precisas para comodidad de nuestros clientes">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Proyectos -->
+    <!-- Sección Productos/Proyectos -->
     <section id="proyectos" class="projects">
         <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
-            <p class="section-subtitle">Descubre nuestras soluciones integrales de diseño y gastronomía</p>
+            <h2 class="section-title">Nuestros Productos Destacados</h2>
+            <p class="section-subtitle">Descubre lo que hace especial a Café Aroma</p>
             
             <div class="projects-grid">
                 <article class="project-card">
                     <div class="project-image">
-                        <img src="zonaestudio.jpg" alt="Diseño de zona de estudio profesional con medidas precisas desde 1.5m hasta 100m">
+                        <img src="images/cafe.jpg" alt="Café de especialidad preparado por nuestros baristas certificados">
                     </div>
                     <div class="project-content">
-                        <h3>Diseño de Espacios de Trabajo</h3>
-                        <p>Creación de zonas de estudio y trabajo optimizadas para productividad y bienestar. Desde pequeños rincones de estudio hasta grandes espacios corporativos.</p>
+                        <h3>Café de Especialidad</h3>
+                        <p>Ofrecemos una amplia variedad de cafés de origen único y mezclas exclusivas, preparados con métodos como espresso, pour over y cold brew.</p>
                         <div class="project-features">
-                            <span><i class="fas fa-ruler-combined"></i> Diseño personalizado</span>
-                            <span><i class="fas fa-lightbulb"></i> Iluminación óptima</span>
-                            <span><i class="fas fa-leaf"></i> Materiales sostenibles</span>
+                            <span><i class="fas fa-check-circle"></i> Granos 100% arábica</span>
+                            <span><i class="fas fa-check-circle"></i> Tostado artesanal</span>
+                            <span><i class="fas fa-check-circle"></i> Baristas certificados</span>
                         </div>
-                        <a href="#" class="btn btn-secondary" aria-label="Más información sobre diseño de espacios de trabajo">Ver detalles</a>
                     </div>
                 </article>
 
                 <article class="project-card">
                     <div class="project-image">
-                        <img src="postre.jpg" alt="Selección de mousses gourmet: fresa, chocolate, frambuesa y chocolate blanco">
+                        <img src="images/postre.jpg" alt="Postres gourmet hechos diariamente con ingredientes frescos">
                     </div>
                     <div class="project-content">
-                        <h3>Experiencias Gastronómicas</h3>
-                        <p>Desarrollo de menús y experiencias culinarias únicas. Desde postres gourmet hasta catering completo para eventos corporativos.</p>
+                        <h3>Postres Gourmet</h3>
+                        <p>Nuestros postres artesanales, incluyendo mousses de fresa, chocolate, frambuesa y chocolate blanco, son el complemento perfecto para tu café.</p>
                         <div class="project-features">
-                            <span><i class="fas fa-utensils"></i> Mousses gourmet</span>
-                            <span><i class="fas fa-seedling"></i> Ingredientes naturales</span>
-                            <span><i class="fas fa-palette"></i> Presentación artística</span>
+                            <span><i class="fas fa-check-circle"></i> Hechos diariamente</span>
+                            <span><i class="fas fa-check-circle"></i> Ingredientes naturales</span>
+                            <span><i class="fas fa-check-circle"></i> Sin conservantes</span>
                         </div>
-                        <a href="#" class="btn btn-secondary" aria-label="Más información sobre experiencias gastronómicas">Ver detalles</a>
                     </div>
                 </article>
 
                 <article class="project-card">
                     <div class="project-image">
-                        <img src="cafe.jpg" alt="Café con leche profesional servido en taza blanca con patrón de hoja, granos de café y cuchara de plata">
+                        <img src="images/zonaestudio.jpg" alt="Espacios diseñados para trabajar, estudiar o relajarse con comodidad">
                     </div>
                     <div class="project-content">
-                        <h3>Ambientes Cafeteros</h3>
-                        <p>Diseño de espacios para coffee shops y experiencias de café premium. Desde la arquitectura hasta la selección de granos y presentación.</p>
+                        <h3>Espacios Premium</h3>
+                        <p>Hemos diseñado zonas específicas para trabajo, estudio y relajación, con mobiliario ergonómico, iluminación óptima y WiFi de alta velocidad.</p>
                         <div class="project-features">
-                            <span><i class="fas fa-coffee"></i> Café de especialidad</span>
-                            <span><i class="fas fa-chair"></i> Diseño de mobiliario</span>
-                            <span><i class="fas fa-mug-hot"></i> Experiencia sensorial</span>
+                            <span><i class="fas fa-check-circle"></i> Mobiliario ergonómico</span>
+                            <span><i class="fas fa-check-circle"></i> WiFi gratis</span>
+                            <span><i class="fas fa-check-circle"></i> Enchufes en cada mesa</span>
                         </div>
-                        <a href="#" class="btn btn-secondary" aria-label="Más información sobre ambientes cafeteros">Ver detalles</a>
                     </div>
                 </article>
             </div>
@@ -135,7 +139,7 @@
     <section id="contacto" class="contact">
         <div class="container">
             <h2 class="section-title">Contáctanos</h2>
-            <p class="section-subtitle">¿Listo para transformar tus espacios y experiencias? Escríbenos</p>
+            <p class="section-subtitle">¿Tienes preguntas, sugerencias o quieres reservar un espacio?</p>
             
             <div class="contact-grid">
                 <div class="contact-info">
@@ -145,7 +149,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h4>Dirección</h4>
-                                <p>Av. Diseño 123, Col. Innovación<br>Ciudad Creativa, CP 45678</p>
+                                <p>Calle del Aroma 123<br>Colonia Cafetalera<br>Ciudad, CP 12345</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -159,53 +163,69 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
-                                <p>info@espaciosysabores.com</p>
+                                <p>info@cafearoma.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-clock"></i>
                             <div>
-                                <h4>Horario de Atención</h4>
-                                <p>Lunes a Viernes: 9:00 - 18:00 hrs<br>Sábados: 10:00 - 14:00 hrs</p>
+                                <h4>Horario</h4>
+                                <p>Lunes a Viernes: 7:00 - 22:00<br>Sábados y Domingos: 8:00 - 23:00</p>
                             </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h4>Síguenos en redes sociales</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook de Café Aroma"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram de Café Aroma"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter de Café Aroma"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="TikTok de Café Aroma"><i class="fab fa-tiktok"></i></a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="contact-form-container">
+                    <h3>Envíanos un mensaje</h3>
                     <form id="contactForm" class="contact-form">
                         <div class="form-group">
-                            <label for="name">Nombre Completo *</label>
+                            <label for="name">Nombre completo *</label>
                             <input type="text" id="name" name="name" required aria-required="true" placeholder="Ingresa tu nombre">
-                            <div class="error-message" id="nameError"></div>
+                            <div class="error-message" id="nameError" role="alert" aria-live="polite"></div>
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">Correo Electrónico *</label>
+                            <label for="email">Correo electrónico *</label>
                             <input type="email" id="email" name="email" required aria-required="true" placeholder="ejemplo@correo.com">
-                            <div class="error-message" id="emailError"></div>
+                            <div class="error-message" id="emailError" role="alert" aria-live="polite"></div>
                         </div>
                         
                         <div class="form-group">
                             <label for="subject">Asunto</label>
                             <select id="subject" name="subject">
-                                <option value="">Selecciona una opción</option>
-                                <option value="diseño">Diseño de Espacios</option>
-                                <option value="gastronomia">Experiencias Gastronómicas</option>
-                                <option value="evento">Evento Corporativo</option>
-                                <option value="cotizacion">Cotización</option>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="reserva">Reserva de espacio</option>
+                                <option value="informacion">Información general</option>
+                                <option value="evento">Organización de evento</option>
+                                <option value="sugerencia">Sugerencia o queja</option>
                                 <option value="otro">Otro</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
                             <label for="message">Mensaje *</label>
-                            <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Describe tu proyecto o consulta"></textarea>
-                            <div class="error-message" id="messageError"></div>
+                            <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Escribe tu mensaje aquí..."></textarea>
+                            <div class="error-message" id="messageError" role="alert" aria-live="polite"></div>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
-                        <div id="formSuccess" class="success-message"></div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Deseo recibir novedades y promociones de Café Aroma</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+                        <div id="formSuccess" class="success-message" role="alert" aria-live="polite"></div>
                     </form>
                 </div>
             </div>
@@ -217,41 +237,49 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="#" class="logo">Espacios<span>&</span>Sabores</a>
-                    <p>Transformamos espacios y creamos experiencias que inspiran.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Visítanos en Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Visítanos en Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Visítanos en Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Visítanos en LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Visítanos en Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
+                    <a href="#inicio" class="logo">
+                        <i class="fas fa-coffee"></i>
+                        <span>Café</span>Aroma
+                    </a>
+                    <p>Tu lugar para disfrutar del mejor café, postres deliciosos y un ambiente único.</p>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Enlaces Rápidos</h4>
+                    <h4>Enlaces rápidos</h4>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#proyectos">Proyectos</a></li>
                         <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#proyectos">Productos</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-services">
-                    <h4>Nuestros Servicios</h4>
+                    <h4>Nuestros servicios</h4>
                     <ul>
-                        <li><a href="#">Diseño de Interiores</a></li>
-                        <li><a href="#">Consultoría Gastronómica</a></li>
-                        <li><a href="#">Diseño de Mobiliario</a></li>
-                        <li><a href="#">Catering Corporativo</a></li>
+                        <li><a href="#proyectos">Café de especialidad</a></li>
+                        <li><a href="#proyectos">Postres gourmet</a></li>
+                        <li><a href="#proyectos">Espacio para trabajar</a></li>
+                        <li><a href="#contacto">Reservaciones</a></li>
                     </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Suscríbete a nuestro newsletter</h4>
+                    <p>Recibe promociones exclusivas y novedades.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" aria-label="Correo electrónico para newsletter">
+                        <button type="submit" aria-label="Suscribirse"><i class="fas fa-paper-plane"></i></button>
+                    </form>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 Espacios & Sabores. Todos los derechos reservados.</p>
-                <p>Diseñado con <i class="fas fa-heart" style="color:#e74c3c;"></i> para experiencias únicas</p>
+                <p>&copy; <span id="currentYear"></span> Café Aroma. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
             </div>
         </div>
     </footer>
